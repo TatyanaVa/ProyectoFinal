@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario Usuarios</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<head>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/usuario/formularioUsuario">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/usuarios">Usuarios</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</head>
+<div class="container mt-3" width="50%" >
+    <h2>Registrar Usuario</h2>
+    <form th:action="@{/usuario/formularioUsuario}" method="post" th:object="${usuario}">
+
+        <div class="mb-3 mt-3">
+            <label >ID:</label>
+            <input type="number" class="form-control" placeholder="Ingrese id" th:field="*{id}">
+        </div>
+
+        <div class="mb-3 mt-3">
+            <label >Nombre:</label>
+            <input type="text" class="form-control" placeholder="Ingrese el nombre" th:field="*{nombre}">
+        </div>
+
+
+        <div class="mb-3">
+            <label >Apellido:</label>
+            <input type="text" class="form-control" placeholder="Ingrese el apellido" th:field="*{apellido}">
+        </div>
+
+        <div class="mb-3">
+            <label >Correo:</label>
+            <input type="email" class="form-control" placeholder="Ingrese su correo" th:field="*{correo}">
+        </div>
+        <div class="mb-3">
+            <label >Usuario:</label>
+            <input type="text" class="form-control" placeholder="Ingrese su usuario" th:field="*{usuarioCorreo}">
+        </div>
+        <div class="mb-3">
+            <label >Rol:</label>
+            <input type="text" class="form-control" placeholder="Ingrese su rol" th:field="*{rol}">
+        </div>
+        <div class="mb-3">
+            <label >Contraseña:</label>
+            <input type="password" class="form-control"  th:field="*{contra}">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>

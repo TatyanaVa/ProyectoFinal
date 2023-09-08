@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Películas</title>
+</head>
+<body>
+
+    </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/home">Películas Gratis!!!</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/home">Inicio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/index">Pelis</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/login">Acerca de nosotros</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/usuario/formularioUsuario">Registrarse</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/pelicula/formularioPelicula">Registrar Pelicula</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</nav>
+<br>
+        <div class="container">
+        <div class="alert alert-dismissible alert-warning">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <h4 class="alert-heading">Atención!</h4>
+            <p class="mb-0">Usuario de CineFlix, ahora tenemos FULL HD!! Disfruta </p>
+        </div>
+        <header class="masthead bg-secondary text-white text-center">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="latest-movie">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/lJxttK_F-II?si=OtBABso0tfM17zti" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="latest-movie">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/_YUzQa_1RCE?si=m-iJpn8PN55vkWMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="latest-movie">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/pNJqi6WCBBY?si=lENMRa_lzuuEmkBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="latest-movie">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/Grh5zao8XN8?si=BucTU-VbShsvY4ke" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+<br>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="latest-movie">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/7TrQnG8qg_0?si=jOBuG9TJw2QE4Z7p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="latest-movie">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/2jQQOFONwfQ?si=ESrGDwOn-upDjDrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="latest-movie">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/vA-5QlQGXoE?si=Uz5hpgILWP7gRc5_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="latest-movie">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/fUJwokk4Kro?si=JxCaBag2lnh7n2IH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+            </header>
+
+<br>
+        <header class="masthead bg-primary text-white text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="section-title">Cartelera Próximos Estrenos</h2>
+
+                <ul class="movie-schedule">
+                    <li>
+                        <img th:src="@{/imagenes/peli9.jpg}"  width="50%"/>
+                    </li>
+                    <br>
+                    <li>
+
+                        <img th:src="@{/imagenes/peli1.jpg}"  width="50%"/>
+                    </li>
+                    <br>
+                    <li>
+                        <img th:src="@{/imagenes/peli4.jpeg}"  width="50%"/>
+                    </li>
+                    <br>
+                    <li>
+                        <img th:src="@{/imagenes/peli5.jpg}"  width="50%"/>
+                    </li>
+                </ul> <!-- .movie-schedule -->
+            </div>
+            <div class="col-md-4">
+                <h2 class="section-title">Series Destacadas</h2>
+
+                <ul class="movie-schedule">
+                    <li>
+                        <img th:src="@{/imagenes/peli18.jpg}"  width="50%"/>
+                    </li>
+                    <br>
+                    <li>
+                        <img th:src="@{/imagenes/peli17.webp}"  width="50%"/>
+                    </li>
+                    <br>
+                    <li>
+                        <img th:src="@{/imagenes/peli21.jpg}"  width="50%"/>
+                    </li>
+                    <br>
+                    <li>
+                        <img th:src="@{/imagenes/peli23.webp}"  width="50%"/>
+                    </li>
+                </ul> <!-- .movie-schedule -->
+            </div>
+            <div class="col-md-4">
+                <h2 class="section-title">Recomendaciones</h2>
+
+                <ul class="movie-schedule">
+                    <li>
+                        <img th:src="@{/imagenes/peli22.jpg}"  width="50%"/>
+                    </li>
+                    <br>
+                    <li>
+                        <img th:src="@{/imagenes/peli24.jpg}"  width="50%"/>
+                    </li>
+                    <br>
+                    <li>
+                        <img th:src="@{/imagenes/peli6.jpg}"  width="50%"/>
+                    </li>
+                    <br>
+                    <li>
+                        <img th:src="@{/imagenes/peli14.webp}"  width="50%"/>
+                    </li>
+                </ul> <!-- .movie-schedule -->
+            </div>
+        </div>
+        </div>
+        </div> <!-- .container -->
+
+        </section>
+        </header>
+
+
+        <header class="masthead bg-secondary text-white text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="section-title">Nuevos Capítulos</h2>
+
+                    <div id="carouselExample1" class="carousel slide">
+                        <div class="carousel-inner container-fluid">
+                            <div class="carousel-item active">
+                                <img th:src="@{/imagenes/peli10.jpg}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/peli11.webp}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/peli12.jpg}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/peli14.webp}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/peli3.jpg}"  width="50%"/>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    </nav>
+
+                </div>
+                <div class="col-md-4">
+                    <h2 class="section-title">Ultra HD</h2>
+
+                    <div id="carouselExample2" class="carousel slide">
+                        <div class="carousel-inner container-fluid">
+                            <div class="carousel-item active">
+                                <img th:src="@{/imagenes/peli15.jpg}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/peli16.jpg}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/peli17.webp}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/peli18.jpg}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/peli19.jpg}"  width="50%"/>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    </nav>
+
+                </div>
+                <div class="col-md-4">
+                    <h2 class="section-title">Series </h2>
+
+                    <div id="carouselExample3" class="carousel slide">
+                        <div class="carousel-inner container-fluid">
+                            <div class="carousel-item active">
+                                <img th:src="@{/imagenes/serie5.jpg}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/serie1.jpg}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/serie3.jpg}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/serie4.jpg}"  width="50%"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img th:src="@{/imagenes/serie2.webp}"  width="50%"/>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    </nav>
+                </div>
+            </div> <!-- .container -->
+
+            </section>
+        </header>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
